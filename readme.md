@@ -1,6 +1,6 @@
-# UXE - HTML5 Storage
+# UXE - Semantic HTML
 
-For this assignment, students will be required to build a single static web page that leverages AppCache and takes advantage of either local storage, indexDB or the File API.
+For this assignment, students will be required to build a single static web page that leverages the principals of semantic HTML and concepts like the HTML5 Outline.
 
 
 ## Submitting assignments
