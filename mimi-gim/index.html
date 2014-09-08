@@ -2,7 +2,6 @@
 <html manifest="example.appcache" lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Form | Code Fellows</title>
     <meta name="description" content="Demo for HTML5 architecture and semantics.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,19 +10,24 @@
     <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
   </head>
   <body>
-    <div id="wrapper">
-    <div id="image"><img src="img/CodeFellowsLogo.jpeg"></div>
-    <form id="testForm"  action="" role="form">
-      <label>Enter Your Name</label>
-      <input type="text" name="yourname" id="yourname" class="stored" value="" aria-required="true"/><br>
-      <label>Enter Your Hometown</label>
-      <input type="text" name="hometown" id="hometown" class="stored" aria-required="true"/><br>
-      <input type="submit" class="demo-button" value="Submit" aria-describedby="Submit Button"/>
-    </form>
-    <div itemscope>
-      <p>This webpage was created by <span itemprop="name">Sean</span> and <span itemprop="name">Maggie</span> on <time datetime="2014-09-04">September 4, 2014.</p>
-
-    </div>
+    <main role="main">
+      <header id="image">
+          <img src="img/CodeFellowsLogo.jpeg" alt="Code Fellows Logo">
+      </header>
+      <article>
+        <h1>Information:</h1>
+        <form id="testForm"  action="URL" role="form">
+          <label>Enter Your Name</label>
+          <input type="text" name="yourname" id="yourname" class="stored" value="" aria-required="true"/><br>
+          <label>Enter Your Hometown</label>
+          <input type="text" name="hometown" id="hometown" class="stored" aria-required="true"/><br>
+          <input type="submit" class="demo-button" value="Submit"/>
+        </form>
+      </article>
+      <footer role="contentinfo" itemscope>
+        <p>This webpage was created by <span itemprop="name">Sean</span> and <span itemprop="name">Maggie</span> on <time datetime="2014-09-04">September 4, 2014.</time></p>
+      </footer>
+    </main>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
