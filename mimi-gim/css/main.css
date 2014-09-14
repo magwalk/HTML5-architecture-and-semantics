@@ -1,7 +1,28 @@
-*{
-  font-family:'Roboto', sans-serif; /* Weights available are Thin-100, Normal-400, Heavy-700*/
-
+/* CSS Reset */
+html, body, div,
+h1, h2, h3, h4, h5, h6, img,  ul, li,
+fieldset, form, label,
+article, footer, header, nav, section
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 2em;
+}
+ol, ul {
+  list-style: none;
+}
+/*End CSS Reset*/
 
 body {
   background: -webkit-linear-gradient(#afc4c6, #66999e); /* For Safari 5.1 to 6.0 */
@@ -10,24 +31,27 @@ body {
   background: linear-gradient(#afc4c6, #66999e); /* Standard syntax */
   margin:0px auto;
   padding:0px 0px;
-
 }
+
 h1 {
   text-align:center;
   font-weight:700;
   width:100%;
   color:#FFF;
 }
-h2{
+
+article h1 {
   color:#66999e;
   font-weight:100;
   font-size:16px;
 }
-h3{
+
+footer h1 {
   color:#66999e;
   font-weight:400;
   font-size:12px;
 }
+
 p {
   font-size:10px;
   font-weight:400;
@@ -44,32 +68,19 @@ main {
   box-shadow: 5px 5px 5px #404040;
 }
 
-
-
 header {
   margin: 0 auto 20px auto;
 }
 
-
-form input{
+form input {
   background-color: rgba(255,255,255,0.3);
 }
 
-#alertBox_inactive{
+#alertBox_inactive {
   display:none;
-  position:fixed;
-  background-color:#FFF;
-  border:1px solid black;
-  border-radius:15px;
-  top:50%;
-  left:50%;
-  width:450px;
-  height:100px;
-  margin-top:-110px;
-  margin-left:-255px;
-  padding:20px 30px;
 }
-#alertBox_active{
+
+#alertBox_active {
   display:block;
   position:fixed;
   background-color:#FFF;
@@ -83,7 +94,3 @@ form input{
   margin-left:-255px;
   padding:20px 30px;
 }
-
-
-
-
